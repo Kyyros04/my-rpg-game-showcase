@@ -9,7 +9,7 @@ Instead of exposing the full proprietary codebase, this project isolates core mo
 ## Repository Structure & Patterns Catalog
 
 ### Input & View Decoupling (Command & Observer Patterns)
-* **Directory:** `CoreSystems/InputSystem/`
+* **Directory:** `ManagerInput/`
 * **Patterns Used:** Command Pattern, Observer Pattern, Null Object Pattern, Component-Based Singleton.
 * **Problem Solved:** Prevents monolithic `if/else` conditioning inside the player class during state shifts (e.g., cutscenes, dialogue locks, or custom camera tracking routines).
 * **Key Concept:** Isolates hardware polling input parameters from physical/graphical translation wrappers, allowing real-time polymorphic swapping of active execution scripts via a centralized gateway.
