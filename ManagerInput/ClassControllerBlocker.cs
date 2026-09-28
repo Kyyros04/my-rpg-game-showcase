@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Intoworld2dtd
 {
+    /// <summary>
+    /// Null-Object variant pattern forcing hardcoded vector operations while muting physical hardware polling.
+    /// </summary>
     public class ClassControllerBlocker : IControllerCmd
     {
         private ScriptPlayerController playerObj;

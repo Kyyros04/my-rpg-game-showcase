@@ -3,6 +3,9 @@ using System.Collections;
 
 namespace Intoworld2dtd
 {
+    /// <summary>
+    /// Concrete execution runtime sample showing dynamic polymorphic swapping via safe Coroutine handlers.
+    /// </summary>
     public class ScriptManualPanoramic : ScriptPanoramicViewInteractable
     {
         public float speedCamera=3f;
@@ -18,7 +21,7 @@ namespace Intoworld2dtd
 
         private IEnumerator WaitForExitManualPan()
         {
-            yield return StartCoroutine(WaitForExitInput());
+            yield return StartCoroutine(WaitForExitInput()); // it is a ScriptPanoramicViewInteractable method, waiting for exit input user from panoramic camera view mode.
 
             ScriptManagerInput.Instance.ResetToPlayerController();
         }

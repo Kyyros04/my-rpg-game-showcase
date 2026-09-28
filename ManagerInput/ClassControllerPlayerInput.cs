@@ -2,6 +2,9 @@ using UnityEngine;
 using System;
 namespace Intoworld2dtd
 {
+    /// <summary>
+    /// Concrete execution strategy that captures standard hardware player navigation inputs.
+    /// </summary>
     public class ClassControllerPlayerInput : IControllerCmd
     {
         private ScriptPlayerController playerObj;

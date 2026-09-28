@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Intoworld2dtd
 {
+     /// <summary>
+    /// Concrete rendering controller containing pixel-snapping algorithms for dynamic camera scrolling.
+    /// </summary>
     public class ClassControllerCameraPan : IControllerCmd
     {
         private Vector2 direction;
